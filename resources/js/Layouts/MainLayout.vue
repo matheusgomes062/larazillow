@@ -1,11 +1,11 @@
 <template>
-  <Link href="/">Main Page</Link>&nbsp;
+  <Link href="/listing">Listings</Link>&nbsp;
+  <Link href="/listing/create">New Listing</Link>
   <Link href="/hello">Show Page</Link>
   <slot>Default</slot>
   <div v-if="flashSuccess" class="success">
     {{ flashSuccess }}
   </div>
-  <div>{{ y }}</div>
 </template>
 
 <script setup>
