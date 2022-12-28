@@ -14,7 +14,7 @@ class ListingController extends Controller
      */
     public function index()
     {
-        return intertia(
+        return inertia(
             'Listing/Index',
             [
                 'listings' => Listing::all()
@@ -52,7 +52,7 @@ class ListingController extends Controller
     public function show(Listing $listing)
     {
 
-        return intertia(
+        return inertia(
             'Listing/Index',
             [
                 'listings' => $listing

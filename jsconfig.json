@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "resources/js/*"
+        "routes/resources/js/*"
       ]
     },
     "jsx": "preserve",
