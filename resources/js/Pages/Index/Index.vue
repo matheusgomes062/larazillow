@@ -1,6 +1,8 @@
 <template>
   <div>Index</div>
-  <Link href="/hello">Show Page</Link>
+  <Link href="/hello">
+    Show Page
+  </Link>
   <div>
     The message is {{ message }}
   </div>
@@ -8,7 +10,5 @@
 
 <script setup>
 import { Link } from '@inertiajs/inertia-vue3'
-defineProps({
-  message: String,
-})
+defineProps({ message: String })
 </script>

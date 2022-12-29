@@ -26,6 +26,7 @@
 <script setup>
 import { computed } from 'vue'
 import { Link, usePage } from '@inertiajs/inertia-vue3'
+
 const page = usePage()
 const flashSuccess = computed(
   () => page.props.value.flash.success,

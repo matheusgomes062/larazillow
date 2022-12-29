@@ -65,21 +65,14 @@ class ListingController extends Controller
      */
     public function show(Listing $listing)
     {
-
         return inertia(
-            'Listing/Index',
+            'Listing/Show',
             [
-                'listings' => $listing
+                'listing' => $listing
             ]
         );
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Listing $listing)
     {
         return inertia(
@@ -90,13 +83,6 @@ class ListingController extends Controller
         );
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Listing $listing)
     {
         $listing->update(
@@ -116,12 +102,7 @@ class ListingController extends Controller
             ->with('success', 'Listing was changed!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy(Listing $listing)
     {
         $listing->delete();
